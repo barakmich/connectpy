@@ -1,0 +1,15 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/barakmich/connectpyexample/proto
+plugins:
+  - plugin: buf.build/protocolbuffers/go
+    out: ../go/proto
+    opt: paths=source_relative
+  - plugin: buf.build/bufbuild/connect-go
+    out: ../go/proto
+    opt: paths=source_relative
+  - plugin: python_betterproto
+    out: ../proto 
+    #opt: pydantic_dataclasses

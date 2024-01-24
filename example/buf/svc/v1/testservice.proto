@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package svc.v1;
+
+message CapsRequest {
+  string msg = 1;
+}
+
+message CapsResponse {
+  string msg = 1;
+}
+
+message MustErrorRequest{
+  string err_msg = 1;
+}
+
+message MustErrorResponse {}
+
+service CapsService {
+  rpc Caps(CapsRequest) returns (CapsResponse) {}
+  rpc MustError(MustErrorRequest) returns (MustErrorResponse) {}
+}
