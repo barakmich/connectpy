@@ -1,0 +1,32 @@
+[project]
+name = "connectpy"
+version = "0.1.0"
+description = "A Buf Connect transport implementation for betterproto, based on Starlette and aiohttp"
+authors = [
+    { name = "Barak Michener", email = "barak@barakmich.com" }
+]
+dependencies = [
+    "betterproto[compiler]>=2.0.0b6",
+    "uvicorn>=0.27.0",
+    "grpclib>=0.4.7",
+    "starlette>=0.36.1",
+    "aiohttp>=3.9.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+hello = "connectpy:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/connectpy"]
