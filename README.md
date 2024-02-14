@@ -2,9 +2,9 @@
 
 An implementation of the [Buf Connect](https://connectrpc.com/) protocol for Python, atop [betterproto](https://github.com/danielgtaylor/python-betterproto) atop [Starlette](https://www.starlette.io/) and, therefore, compatible interfaces (eg, [FastAPI](https://fastapi.tiangolo.com/))
 
-If you're already using [grpclib](https://github.com/vmagamedov/grpclib) it's aiming to be a drop-in replacement to allow HTTP/1.1 compatibility. If you're not, it allows you to adopt GRPC on your HTTP/1.1 infrastructure, and slowly migrate to full-blown GRPC. However, a current limitation is that it can only run in one mode or the other for now.
+If you're already using [grpclib](https://github.com/vmagamedov/grpclib) it's aiming to be a drop-in replacement to allow HTTP/1.1 compatibility. If you're not, it allows you to adopt gRPC on your HTTP/1.1 infrastructure, and slowly migrate to full-blown gRPC. However, a current limitation is that it can only run in one mode or the other for now.
 
-By emulating the grpclib server/client instances, this gives an option for using the same GRPC server and client classes, and only change the implementation underneath at creation time.
+By emulating the grpclib server/client instances, this gives an option for using the same gRPC server and client classes, and only change the implementation underneath at creation time.
 
 ## Examples
 
@@ -15,7 +15,7 @@ By emulating the grpclib server/client instances, this gives an option for using
 python example/example_server.py
 ```
 
-Runs immediately in Connect mode. Adding the `--grpc` flag switches to using `grpclib` and all the HTTP/2, default GRPC listeners instead.
+Runs immediately in Connect mode. Adding the `--grpc` flag switches to using `grpclib` and all the HTTP/2, default gRPC listeners instead.
 
 ### Run the Python client
 ```
