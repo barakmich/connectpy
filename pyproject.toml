@@ -3,7 +3,7 @@ name = "connectpy"
 version = "0.1.0"
 description = "A Buf Connect transport implementation for betterproto, based on Starlette and aiohttp"
 authors = [
-    { name = "Barak Michener", email = "barak@barakmich.com" }
+    { name = "Barak Michener", email = "me@barakmich.com" }
 ]
 dependencies = [
     "betterproto[compiler]>=2.0.0b6",
@@ -29,4 +29,4 @@ managed = true
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/connectpy"]
+packages = ["connectpy"]

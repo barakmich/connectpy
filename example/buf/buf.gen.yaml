@@ -13,3 +13,10 @@ plugins:
   - plugin: python_betterproto
     out: ../proto 
     #opt: pydantic_dataclasses
+  # Commented out the upstream python protobuf generator
+  #- plugin: buf.build/grpc/python:v1.60.0
+    #out: ../pp
+  #- plugin: buf.build/protocolbuffers/python:v25.2
+    #out: ../pp
+  #- plugin: buf.build/protocolbuffers/pyi:v25.2
+    #out: ../pp
