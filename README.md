@@ -49,5 +49,5 @@ Runs a Go reference client using the Buf Connect library. As per the [Buf Connec
 ## Development
 This repo assumes you have the appropriate virtualenvs set up. 
 The developer prefers [rye](https://rye-up.com/).
-If you feel like contributing, however, you do you -- the best part of rye is that it's a standard python package.
+If you feel like contributing, however, you do you -- the best part of rye is that connectpy is a standard python package.
 

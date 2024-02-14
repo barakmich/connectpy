@@ -1,7 +1,10 @@
 [project]
 name = "connectpy"
 version = "0.1.0"
+license = "BSD-2-Clause"
 description = "A Buf Connect transport implementation for betterproto, based on Starlette and aiohttp"
+repository = "https://github.com/barakmich/connectpy"
+keywords = ["grpc", "protobuf", "http"]
 authors = [
     { name = "Barak Michener", email = "me@barakmich.com" }
 ]
