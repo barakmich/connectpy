@@ -17,7 +17,6 @@ import (
 
 var (
 	hostport = flag.String("hostport", "0.0.0.0:5001", "Hostport to connect to")
-	grpc     = flag.Bool("grpc", false, "use GRPC")
 )
 
 type CapsHandler struct{}
